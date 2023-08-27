@@ -25,13 +25,13 @@ with open("classifier.pkl", "rb") as file:
 # 3. Index route, opens automatically on http://127.0.0.1:8000
 @appFastApi.get('/')
 def index():
-    return {'message': 'Hello, World'}
+    return {'message': 'Hello, This is a sample about Machine Learning with FastApi'}
 
 # 4. Route with a single parameter, returns the parameter within a message
 #    Located at: http://127.0.0.1:8000/AnyNameHere
 @appFastApi.get('/{name}')
 def get_name(name: str):
-    return {'Welcome To Krish Youtube Channel': f'{name}'}
+    return {'Jerson Carbajal is working it maybe new things will come soon ': f'{name}'}
 
 # 3. Expose the prediction functionality, make a prediction from the passed
 #    JSON data and return the predicted Bank Note with the confidence

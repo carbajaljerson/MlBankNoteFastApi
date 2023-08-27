@@ -15,8 +15,11 @@ import pandas as pd
 # 2. Create the appFastApi object
 appFastApi = FastAPI()
 
-pickle_in = open("classifier.pkl","rb")
-classifier=pickle.load(pickle_in)
+#pickle_in = open("classifier.pkl","rb")
+#classifier=pickle.load(pickle_in)
+
+with open("classifier.pkl", "rb") as file:
+    classifier = pickle.load(file)
 
 
 # 3. Index route, opens automatically on http://127.0.0.1:8000

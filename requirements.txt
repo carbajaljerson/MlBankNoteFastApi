@@ -3,6 +3,5 @@ gunicorn
 httptools
 numpy
 pandas
-scikit-learn
 scipy
 uvicorn
